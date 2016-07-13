@@ -1,0 +1,17 @@
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\HJN.InfoPub.Core.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\HJN.InfoPub.Core.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\Autofac.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\Newtonsoft.Json.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\Autofac.xml
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.xml
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\obj\Debug\HJN.InfoPub.Core.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\obj\Debug\HJN.InfoPub.Core.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\HJN.InfoPub.Entity.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\HJN.InfoPub.Entity.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\obj\Debug\HJN.InfoPub.Core.csprojResolveAssemblyReference.cache
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.YueWenMySql.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.YueWenMySql.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\FluentValidation.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\FluentValidation.pdb

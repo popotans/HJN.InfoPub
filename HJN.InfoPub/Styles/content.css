@@ -1,0 +1,21 @@
+﻿.bdywrapper {
+    width: 100%;
+}
+
+.tb {
+    border-collapse: collapse;
+    width: 100%;
+    border:solid 1px #add9c0;
+}
+
+    .tb td {
+        border: solid 1px #ccc;
+         border-collapse: collapse;
+    }
+    .tb .tbcol1 { text-align:right;width:120px; padding:3px;}
+    .tb .trhead { background:#eee; }
+    .tb .trhead td {padding-left:10px;   }
+.select1 {  width:120px;  }
+.ipt {
+ width:400px; border:solid 1px #ccc;
+}
