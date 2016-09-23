@@ -5,17 +5,61 @@
 .tb {
     border-collapse: collapse;
     width: 100%;
-    border:solid 1px #add9c0;
 }
 
     .tb td {
-        border: solid 1px #ccc;
-         border-collapse: collapse;
+        border: solid 1px #eee;
+        border-collapse: collapse;
+        padding: 3px;
     }
-    .tb .tbcol1 { text-align:right;width:120px; padding:3px;}
-    .tb .trhead { background:#eee; }
-    .tb .trhead td {padding-left:10px;   }
-.select1 {  width:120px;  }
-.ipt {
- width:400px; border:solid 1px #ccc;
+
+    .tb .tbcol1 {
+        text-align: right;
+        width: 120px;
+        padding: 3px;
+    }
+
+    .tb .trhead {
+        background: #99CCFF;
+        font-weight: bold;
+    }
+
+        .tb .trhead td {
+            padding-left: 10px;
+        }
+
+        .tb .trhead td, .tblist .trhead th {
+            border-bottom: solid 2px #66CCFF;
+        }
+
+.select1 {
+    width: 120px;
 }
+
+
+
+.ipt {
+    width: 400px;
+    border: solid 1px #ccc;
+    padding: 4px;
+}
+
+.tblist {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+}
+
+    .tblist .trhead {
+        background-color: #99CCFF;
+    }
+
+        .tblist .trhead td, .tblist .trhead th {
+            border-bottom: solid 2px #66CCFF;
+        }
+
+    .tblist td, .tblist th {
+        border: solid 1px #eee;
+        border-collapse: collapse;
+        padding: 3px;
+    }

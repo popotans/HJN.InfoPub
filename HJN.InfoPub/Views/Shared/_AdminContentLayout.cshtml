@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Styles/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Styles/bootstrap/js/bootstrap.min.js"></script>
+    <link href="~/Styles/content.css" rel="stylesheet" />
+    <link href="~/Scripts/layer/skin/layer.css" rel="stylesheet" />
+    <script src="~/Scripts/base.js"></script>
+    <script src="~/Scripts/layer/layer.js"></script>
+
+
+    <script src="~/Scripts/Jquerytool.js"></script>
+    <script>
+        function alertsuc(msg) {
+            layer.alert(msg, {
+                icon: 1,
+            });
+        }
+        function alertsuc2(msg,cal) {
+            layer.alert(msg,
+                cal,
+                {
+                icon: 1,
+            });
+        }
+        function alertfal(msg) {
+            layer.alert(msg, {
+                icon: 2,
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <div class="bdywrapper" style="min-height:500px;">
+        @RenderBody()
+    </div>
+</body>
+</html>

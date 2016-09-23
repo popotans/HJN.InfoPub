@@ -11,7 +11,7 @@ var addTabs = function (options) {
     //var id = rand.substring(rand.indexOf('.') + 1);
     id = "tab_" + options.id;
     var iframeid = 'if_' + id;
-    window.location.hash = options.id + '!' + encodeURI(options.title) + "!" + options.url;
+   // window.location.hash = options.id + '!' + encodeURI(options.title) + "!" + options.url;
     var url = window.location.protocol + '//' + window.location.host;
     options.url = url + options.url;
 
@@ -65,13 +65,13 @@ $(function () {
         closeTab(id);
     });
 
-    $(".mitem").each(function () {
-        $(this).click(function () {
-            var id = "tab_" + $(this).attr('id');
-            var iframeid = 'if_' + id;
-            window.location.hash = iframeid + '!' + options.url;
-        });
-    });
+    //$(".mitem").each(function () {
+    //    $(this).click(function () {
+    //        var id = "tab_" + $(this).attr('id');
+    //        var iframeid = 'if_' + id;
+    //        window.location.hash = iframeid + '!' + options.url;
+    //    });
+    //});
 
     function loadtabfromHash(hashStr) {
         var arr = hashStr.split("!");
@@ -82,14 +82,14 @@ $(function () {
         addTabs({ id: hrefid, title: title, close: true, url: url });
     }
 
-    window.onhashchange = function () {
-        //var hashStr = location.hash.replace("#", "");
-        //loadtabfromHash(hashStr);
-    }
+    //window.onhashchange = function () {
+    //    //var hashStr = location.hash.replace("#", "");
+    //    //loadtabfromHash(hashStr);
+    //}
 
-    var hashStr = location.hash.replace("#", "");
-    if (hashStr != null && hashStr.length != 0 && hashStr.indexOf('!') > -1) {
-        loadtabfromHash(hashStr);
-    }
+    //var hashStr = location.hash.replace("#", "");
+    //if (hashStr != null && hashStr.length != 0 && hashStr.indexOf('!') > -1) {
+    //    loadtabfromHash(hashStr);
+    //}
 
 });
