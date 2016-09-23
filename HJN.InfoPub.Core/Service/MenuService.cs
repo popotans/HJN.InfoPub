@@ -1,8 +1,10 @@
 ﻿using FluentValidation.Results;
 using HJN.InfoPub.Core.IDao;
+using HJN.InfoPub.Core.Mode;
 using HJN.InfoPub.Core.Validate;
 using HJN.InfoPub.Entity;
 using PWMIS.Core.YueWen.DataProvider;
+using PWMIS.DataMap.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +22,7 @@ namespace HJN.InfoPub.Core.Service
 
         public int Add(infopub_admin_menu menuentity)
         {
-            MenuValidator.DoValidate(menuentity);
+            MenuValidator.CreateInstance().DoValidate(menuentity);
 
             YwDb db = DbContext.GetInfoDb();
             return db.Insert(menuentity);
@@ -50,20 +52,47 @@ namespace HJN.InfoPub.Core.Service
         {
             YwDb db = DbContext.GetInfoDb();
             PagedModel pm = new PagedModel();
-            string sql = db.GetPagingSql("admin_menu", "*", "idx desc", where, pageno, pagesize, "mysql");
+            string sql = db.GetPagingSql("admin_menu", "*", " idx desc ", where, pageno, pagesize, "mysql");
+            pm.Data = db.QueryList<infopub_admin_menu>(sql);
             int icount = 0;
-            sql = "select count(1) from `admin_menu` " + where;
+            sql = "select count(1) from `admin_menu`  where  " + where;
             object obj = db.ExecuteScalar(sql);
             if (obj != null)
             {
                 icount = int.Parse(obj.ToString());
             }
 
-            pm.Data = db.QueryList<infopub_admin_menu>(sql);
             pm.Page = pageno;
             pm.Pagesize = pagesize;
             pm.TotalRecord = icount;
             return pm;
+        }
+
+        public List<infopub_admin_menu> GetAll()
+        {
+            infopub_admin_menu menu = new infopub_admin_menu();
+            OQL oql = OQL.From(menu)
+                .Select().OrderBy(menu.idx).END;
+            YwDb db = DbContext.GetInfoDb();
+            var list = EntityQuery<infopub_admin_menu>.QueryList(oql, db);
+            return list;
+        }
+
+
+        public string GetZtreeMenuData4Parent(int idx)
+        {
+            var list = GetAll().Where(x => x.idx != idx);
+            List<ZtreeSimpleMode> zlist = new List<ZtreeSimpleMode>();
+            foreach (var item in list)
+            {
+                ZtreeSimpleMode mode = new ZtreeSimpleMode { val = item.idx.ToString(), pId = item.parentidx.ToString(), open = true, name = item.name, id = item.idx.ToString() };
+                zlist.Add(mode);
+            }
+
+            zlist.Add(new ZtreeSimpleMode { val = "0", pId = "0", open = true, name ="顶级分类", id = "0" });
+            //zlist.Add(new ZtreeSimpleMode { val = "999", pId = "3", open = true, name = "999", id = "999" });
+            //zlist.Add(new ZtreeSimpleMode { val = "77", pId = "7", open = true, name = "77", id = "77" });
+            return ZtreeSimpleMode.ToJson(zlist);
         }
     }
 }

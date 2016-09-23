@@ -53,15 +53,21 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="YueWen.Utility">
+      <HintPath>..\dlls\YueWen.Utility.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppConfig.cs" />
     <Compile Include="DbContext.cs" />
     <Compile Include="IDao\IBaseDao.cs" />
     <Compile Include="IDao\IMenuDao.cs" />
     <Compile Include="Mode\BaseJson.cs" />
+    <Compile Include="Mode\ZtreeSimpleMode.cs" />
     <Compile Include="PagedModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\MenuService.cs" />
+    <Compile Include="Validate\InfoValidator.cs" />
     <Compile Include="Validate\MenuValidator.cs" />
   </ItemGroup>
   <ItemGroup />

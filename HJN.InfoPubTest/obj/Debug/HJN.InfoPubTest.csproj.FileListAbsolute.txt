@@ -38,3 +38,7 @@ I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\zh-Hans\System.Web.WebPages.Deploym
 I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\Autofac.dll
 I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\Newtonsoft.Json.dll
 I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\Autofac.xml
+I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\FluentValidation.dll
+I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\YueWen.Utility.dll
+I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\FluentValidation.pdb
+I:\git\HJN.InfoPub\HJN.InfoPubTest\bin\Debug\YueWen.Utility.pdb

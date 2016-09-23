@@ -15,3 +15,5 @@ I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.YueWenMySql.dll
 I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\PWMIS.Core.YueWenMySql.pdb
 I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\FluentValidation.dll
 I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\FluentValidation.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\YueWen.Utility.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.Core\bin\Debug\YueWen.Utility.pdb

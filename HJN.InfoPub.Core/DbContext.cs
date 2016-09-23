@@ -12,7 +12,7 @@ namespace HJN.InfoPub.Core
         public static YwDb GetInfoDb()
         {
             YwDb db = new YwMySql();
-            db.ConnectionString = "server=localhost;user id=root;password=;database=infopub";
+            db.ConnectionString = AppConfig.Instance.GetByKey("db");
             return db;
         }
     }

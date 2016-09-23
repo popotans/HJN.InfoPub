@@ -14,3 +14,6 @@ I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\PWMIS.Core.YueWenMySql.dl
 I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\PWMIS.Core.YueWenMySql.pdb
 I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\FluentValidation.dll
 I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\FluentValidation.pdb
+I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\YueWen.Utility.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\Newtonsoft.Json.dll
+I:\git\HJN.InfoPub\HJN.InfoPub.MySql.DAOImpl\bin\Debug\YueWen.Utility.pdb
