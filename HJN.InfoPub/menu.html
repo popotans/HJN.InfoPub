@@ -5,19 +5,8 @@
                 icon: 'icon-cog',
                 url: '',
                 menus: [
-                {
-                    id: '11',
-                    text: '添加分类',
-                    icon: 'icon-glass',
-                    url: '/admincommon/addmenu'
-                },
-                {
-                    id: '12',
-                    text: '查看分类',
-                    icon: 'icon-glass',
-                    url: '/admincommon/showmenulist'
-                }
-]
+               
+                ]
             }, {
                 id: '2',
                 text: '信息管理',
@@ -27,12 +16,12 @@
                     id: '21',
                     text: '信息审核',
                     icon: 'icon-glass',
-                    url: '/admincommon/xinxishenhe'
+                    url: '/adm/xinxishenhe'
                 }, {
                     id: '22',
                     text: '信息列表',
                     icon: 'icon-glass',
-                    url: '/admincommon/xinxilist'
+                    url: '/adm/xinxilist'
                 }]
             }, {
                 id: '3',
@@ -50,12 +39,25 @@
                 text: '系统设置',
                 icon: 'icon-envelope',
                 url: '',
-                menus: [{
-                    id: '41',
-                    text: '站点设置',
+                menus: [
+ {
+                    id: '11',
+                    text: '添加菜单',
                     icon: 'icon-glass',
-                    url: '/Order/Query'
-                } 
+                    url: '/adm/MenuAdd'
+                },
+                {
+                    id: '12',
+                    text: '查看菜单',
+                    icon: 'icon-glass',
+                    url: '/adm/MenuShowList'
+                },
+                {
+                    id: '41',
+                    text: '菜单设置',
+                    icon: 'icon-glass',
+                    url: '/Adm/MenuPermissionSet'
+                }
 ]
             }
 ]

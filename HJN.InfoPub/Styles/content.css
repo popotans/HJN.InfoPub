@@ -29,7 +29,7 @@
         }
 
         .tb .trhead td, .tblist .trhead th {
-            border-bottom: solid 2px #66CCFF;
+            border: solid 1px #eee;
         }
 
 .select1 {
@@ -51,11 +51,11 @@
 }
 
     .tblist .trhead {
-        background-color: #99CCFF;
+        background-color:#438eb9; color:#fff;
     }
 
         .tblist .trhead td, .tblist .trhead th {
-            border-bottom: solid 2px #66CCFF;
+            /*border-bottom: solid 2px #99CCFF;*/
         }
 
     .tblist td, .tblist th {

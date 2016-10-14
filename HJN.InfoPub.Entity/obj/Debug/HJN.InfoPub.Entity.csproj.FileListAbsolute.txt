@@ -1,8 +1,0 @@
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\bin\Debug\HJN.InfoPub.Entity.dll
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\bin\Debug\HJN.InfoPub.Entity.pdb
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\bin\Debug\PWMIS.Core.dll
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\bin\Debug\PWMIS.Core.pdb
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\bin\Debug\PWMIS.Core.xml
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\obj\Debug\HJN.InfoPub.Entity.dll
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\obj\Debug\HJN.InfoPub.Entity.pdb
-I:\git\HJN.InfoPub\HJN.InfoPub.Entity\obj\Debug\HJN.InfoPub.Entity.csprojResolveAssemblyReference.cache
