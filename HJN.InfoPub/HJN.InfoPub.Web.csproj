@@ -123,6 +123,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdmController.cs" />
+    <Compile Include="Controllers\AdmMenuController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -438,9 +439,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Adm\Index.cshtml" />
-    <Content Include="Views\Adm\MenuAdd.cshtml" />
-    <Content Include="Views\Adm\MenuShowList.cshtml" />
     <Content Include="Views\Shared\_AdminContentLayout.cshtml" />
     <Content Include="Styles\bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="Styles\bootstrap\css\bootstrap.css.map" />
@@ -449,7 +447,11 @@
     <Content Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Views\Adm\MenuEdit.cshtml" />
+    <Content Include="Views\AdmMenu\MenuShowList.cshtml" />
+    <Content Include="Views\AdmMenu\MenuEdit.cshtml" />
+    <Content Include="Views\AdmMenu\MenuAdd.cshtml" />
+    <Content Include="Views\Adm\Index.cshtml" />
+    <Content Include="Views\AdmMenu\MenuManage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

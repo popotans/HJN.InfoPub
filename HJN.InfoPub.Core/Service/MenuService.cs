@@ -20,7 +20,7 @@ namespace HJN.InfoPub.Core.Service
 
         }
 
-        public int Add(infopub_admin_menu menuentity)
+        public int Add(admin_menu menuentity)
         {
             MenuValidator.CreateInstance().DoValidate(menuentity);
 
@@ -28,7 +28,7 @@ namespace HJN.InfoPub.Core.Service
             return db.Insert(menuentity);
         }
 
-        public int Update(infopub_admin_menu menuentity)
+        public int Update(admin_menu menuentity)
         {
             YwDb db = DbContext.GetInfoDb();
             return db.Update(menuentity);
@@ -41,11 +41,11 @@ namespace HJN.InfoPub.Core.Service
             return rr;
         }
 
-        public infopub_admin_menu Get(int idx)
+        public admin_menu Get(int idx)
         {
             YwDb db = DbContext.GetInfoDb();
             string sql = "select * from admin_menu where idx=" + idx;
-            return db.QueryObject<infopub_admin_menu>(sql);
+            return db.QueryObject<admin_menu>(sql);
         }
 
         public PagedModel GetList(int pageno, int pagesize, string where)
@@ -53,7 +53,7 @@ namespace HJN.InfoPub.Core.Service
             YwDb db = DbContext.GetInfoDb();
             PagedModel pm = new PagedModel();
             string sql = db.GetPagingSql("admin_menu", "*", " idx desc ", where, pageno, pagesize, "mysql");
-            pm.Data = db.QueryList<infopub_admin_menu>(sql);
+            pm.Data = db.QueryList<admin_menu>(sql);
             int icount = 0;
             sql = "select count(1) from `admin_menu`  where  " + where;
             object obj = db.ExecuteScalar(sql);
@@ -68,13 +68,13 @@ namespace HJN.InfoPub.Core.Service
             return pm;
         }
 
-        public List<infopub_admin_menu> GetAll()
+        public List<admin_menu> GetAll()
         {
-            infopub_admin_menu menu = new infopub_admin_menu();
+            admin_menu menu = new admin_menu();
             OQL oql = OQL.From(menu)
                 .Select().OrderBy(menu.idx).END;
             YwDb db = DbContext.GetInfoDb();
-            var list = EntityQuery<infopub_admin_menu>.QueryList(oql, db);
+            var list = EntityQuery<admin_menu>.QueryList(oql, db);
             return list;
         }
 
@@ -89,7 +89,7 @@ namespace HJN.InfoPub.Core.Service
                 zlist.Add(mode);
             }
 
-            zlist.Add(new ZtreeSimpleMode { val = "0", pId = "0", open = true, name ="顶级分类", id = "0" });
+            zlist.Add(new ZtreeSimpleMode { val = "0", pId = "0", open = true, name = "顶级分类", id = "0" });
             //zlist.Add(new ZtreeSimpleMode { val = "999", pId = "3", open = true, name = "999", id = "999" });
             //zlist.Add(new ZtreeSimpleMode { val = "77", pId = "7", open = true, name = "77", id = "77" });
             return ZtreeSimpleMode.ToJson(zlist);

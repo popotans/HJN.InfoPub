@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HJN.InfoPub.Core.IDao
 {
-    public interface IMenuDao : IBaseDao<infopub_admin_menu>
+    public interface IMenuDao : IBaseDao<admin_menu>
     {
         
     }

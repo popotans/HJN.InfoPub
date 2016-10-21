@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HJN.InfoPub.Core.Validate
 {
-    public class InfoValidator : AbstractValidator<infopub_infos>
+    public class InfoValidator : AbstractValidator<infos>
     {
         public InfoValidator()
         {
@@ -23,6 +23,6 @@ namespace HJN.InfoPub.Core.Validate
         {
             return new InfoValidator();
         }
-        
+
     }
 }

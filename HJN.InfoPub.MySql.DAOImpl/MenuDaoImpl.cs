@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HJN.InfoPub.MySql.DaoImpl
 {
-    public class MenuDaoImpl : BaseDaoImpl<infopub_admin_menu>, IMenuDao
+    public class MenuDaoImpl : BaseDaoImpl<admin_menu>, IMenuDao
     {
 
     }

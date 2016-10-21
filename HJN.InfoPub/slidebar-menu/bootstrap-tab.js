@@ -20,6 +20,7 @@ var addTabs = function (options) {
     if (!$("#" + id)[0]) {
         //固定TAB中IFRAME高度
         mainHeight = $(document.body).height() - 90;
+       
         //  if (mainHeight < 700) mainHeight = 700;
         //创建新TAB的title
         title = '<li role="presentation" id="tab_' + id + '"><a href="#' + id + '" aria-controls="' + id + '" role="tab" data-toggle="tab">' + options.title;
@@ -55,9 +56,12 @@ var closeTab = function (id) {
 };
 $(function () {
     mainHeight = $(document.body).height() - 45;
+
     $('.main-left,.main-right').height(mainHeight);
     $("[addtabs]").click(function () {
-        addTabs({ id: $(this).attr("id"), title: $(this).attr('title'), close: true });
+        var title = $(this).attr('title');
+        title = '0';
+        addTabs({ id: $(this).attr("id"), title:title , close: true });
     });
 
     $(".nav-tabs").on("click", "[tabclose]", function (e) {

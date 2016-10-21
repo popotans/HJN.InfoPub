@@ -16,7 +16,7 @@ namespace HJN.InfoPub
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "AdminCommon", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Adm", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

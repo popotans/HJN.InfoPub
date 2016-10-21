@@ -23,7 +23,7 @@ namespace HJN.InfoPub.Core.Validate
         }
     }
 
-    public class MenuValidator : BaseValidator<infopub_admin_menu>
+    public class MenuValidator : BaseValidator<admin_menu>
     {
         public MenuValidator()
         {

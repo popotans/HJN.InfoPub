@@ -32,11 +32,28 @@
                 icon: 2,
             });
         }
+        function openwin(url, width, height, title) {
+            height = $('body').height();
+            if (height > 400) height =400;
+          //  alert(height);
+
+            layer.open({
+                title: title,
+                type: 2,
+                //offset: '10px',
+                offset: 'auto',
+                area: [width+'px', height+'px'],
+                fix: false, //不固定
+                maxmin: false,
+                content: url
+            });
+
+        }
     </script>
 
 </head>
 <body>
-    <div class="bdywrapper" style="min-height:500px;">
+    <div class="bdywrapper" style="min-height:480px; border:red solid 0px;">
         @RenderBody()
     </div>
 </body>
