@@ -26,7 +26,7 @@ var addTabs = function (options) {
         title = '<li role="presentation" id="tab_' + id + '"><a href="#' + id + '" aria-controls="' + id + '" role="tab" data-toggle="tab">' + options.title;
         //是否允许关闭
         if (options.close) {
-            title += ' <i class="glyphicon glyphicon-remove" tabclose="' + id + '"></i>';
+            title += ' <i class="glyphicon glyphicon-remove" style="cursor:pointer" tabclose="' + id + '"></i>';
         }
         title += '</a></li>';
         //是否指定TAB内容

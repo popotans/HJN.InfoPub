@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace HJN.InfoPub.Web.Controllers
 {
-    public class BaseController : Controller
+    public class BaseAdmController : Controller
     {
        
     }

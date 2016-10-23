@@ -20,7 +20,7 @@
     }
 
     .tb .trhead {
-        background: #99CCFF;
+        background: #438eb9;
         font-weight: bold;
     }
 
@@ -63,3 +63,7 @@
         border-collapse: collapse;
         padding: 3px;
     }
+.tb .trhead td, .tb .trhead th {
+     padding:6px; color:#fff;
+      padding-left:10px;
+}
