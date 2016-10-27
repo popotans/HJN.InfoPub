@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminContentLayout.cshtml";
+    ViewBag.title = "菜单管理";
+}
+
+<div class=" container-fluid">
+    <div class="row" id="#node-pop">
+        <div class="col-xs-12" style=" margin-top:4px; border:solid 1px #eee; padding:4px;">
+            <button id="添加菜单" class="btn btn-sm btn-primary addmenu" style="margin-left:10px">
+                新增菜单
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".addmenu").click(function () {
+            var url = "/admmenu/menuadd";
+            openwin(url, 700, 500, '添加菜单');
+            
+        });
+
+    });
+</script>
+
+
+

@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/views/shared/_AdminContentLayout.cshtml";
+    ViewBag.Title = "AddMenu";
+}
+
+<form action="/admincommon/MenuaddPost" method="post" id="form1">
+    <table class="tb">
+        <tr class="trhead">
+            <td colspan="2">添加菜单</td>
+        </tr>
+        <tr>
+            <td class="tbcol1">名 称：</td>
+            <td class="tbcol2">
+                <input type="text" name="name" class="ipt" id="name" />
+            </td>
+        </tr>
+        <tr>
+            <td class="tbcol1">上级分类：</td>
+            <td class="tbcol2">
+                <select name="parentidx" class="select1">
+                    <option value="0">无</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="tbcol1">url：</td>
+            <td class="tbcol2"><input type="text" name="url" class="ipt" id="url" /></td>
+        </tr>
+        <tr>
+            <td class="tbcol1">排序：</td>
+            <td class="tbcol2"><input type="text" name="disorder" class="ipt" id="disorder" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="btn" value="添 加" />
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    $(function () {
+        njh.regsubmit('btn', 'form1', 'json', function (data) {
+            if (data.success) {
+                alertsuc2("添加成功", function () {
+                    window.location = "/admincommon/addmenu";
+                });
+            } else {
+                alertfal(data.msg);
+            }
+        });
+    });
+</script>
+
+
