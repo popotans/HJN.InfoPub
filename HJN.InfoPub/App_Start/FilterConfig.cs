@@ -50,11 +50,11 @@ namespace HJN.InfoPub
             if (!filterContext.ExceptionHandled)
             {
                 //返回异常JSON
-                filterContext.Result = new JsonResult
-                {
-                    //Data = new { Success = false, Message = filterContext.Exception.Message }
-                    Data = BaseJsonResult.BuildResult(0, "exception", filterContext.Exception.Message)
-                };
+                //filterContext.Result = new JsonResult
+                //{
+                //    //Data = new { Success = false, Message = filterContext.Exception.Message }
+                //    Data = BaseJsonResult.BuildResult(0, "exception", filterContext.Exception.Message)
+                //};
             }
         }
     }
